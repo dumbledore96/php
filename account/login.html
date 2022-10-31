@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function click(){
+            document.getElementById("id").value="";
+            document.getElementById("password").value="";
+            document.getElementById("realname").value="";
+        }
+    </script>
+    <h1>登入</h1>
+    <form action="insert.php" method="post" onsubmit="click()">
+        <div class="col">
+            <label for="id">帳號:</label>
+            <input type="text" name="id" id="id" required>
+            <br>
+            <label for="password">密碼</label>
+            <input type="password" name="password" id="password" required>
+            <br>
+        </div>
+        <div class="col">
+            <input type="submit" name="submit" value="登入">
+        </div>
+    </form>
+    
+</body>
+</html>
