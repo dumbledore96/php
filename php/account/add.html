@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function click(){
+            document.getElementById("id").value="";
+            document.getElementById("password").value="";
+            document.getElementById("realname").value="";
+        }
+    </script>
+    <h1>註冊</h1>
+    <p>注意: 帳號密碼不可超過20字</p>
+    <form action="insert.php" method="post" onsubmit="click()">
+        <div class="col">
+            <label for="id">帳號:</label>
+            <input type="text" name="id" id="id" required>
+            <br>
+            <label for="password">密碼</label>
+            <input type="password" name="password" id="password" required>
+            <br>
+            <label for="realname">公開名稱</label>
+            <input type="text" name="realname" id="realname" required>
+            <br>
+        </div>
+        <div class="col">
+            <input type="submit" name="submit" value="建立">
+            <input type="reset" name="reset" value="清除全部">
+        </div>
+    </form>
+    
+</body>
+</html>
